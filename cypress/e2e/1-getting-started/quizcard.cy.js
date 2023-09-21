@@ -4,6 +4,7 @@ describe('create card', () => {
       cy.get("input[type=question]").type("Eine Frage")
       cy.get("input[type=answer]").type("Eine Antwort")
       cy.get("button[type=save]").click()
+      cy.get("div.p-2.border").should('be.visible')
     })
   })
 

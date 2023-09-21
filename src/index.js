@@ -52,7 +52,7 @@ function view(dispatch, model) {
         "➕"
       ),
     ]),
-    ...model.cards.map((card, index) => div( {className: "p-2 border",
+    ...model.cards.map((card, index) => div( {type: "existcard", className: "p-2 border",
          index},[
           p({ },[
               button(
